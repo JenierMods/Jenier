@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <!-- Tres puntos en la esquina superior derecha -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- Bolita en la esquina superior izquierda -->
+    <div class="circle" onclick="contactCreator()"></div>
+
+    <!-- Contenedor de los botones que aparecerán cuando se toque el menú -->
+    <div class="container" id="menuContainer" style="display: none;">
+        <h1>Bienvenido 🥺🫶</h1>
+        <div class="button-group">
+            <button id="university" aria-label="Universidad">Universidad</button>
+            <button id="members" aria-label="Integrantes">Integrantes</button>
+            <button id="recommendations" onclick="location.href='recomendaciones.html'" aria-label="Recomendaciones">Recomendaciones</button>
+            <button id="video" onclick="location.href='video.html'">Video interesante</button>
+            <button id="calendar" onclick="location.href='calendario.html'" aria-label="Calendario">Calendario</button>
+            <button id="creator" aria-label="Creador">Creador</button>
+            <button id="scanQR" onclick="location.href='QR.html'" aria-label="Escanear código QR">Escanear código QR</button>
+        </div>
+    </div>
+
+    <div id="modalOverlay">
+        <div id="modal">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <div id="modalOverlayBolita">
+        <div id="modalBolita">
+            <p>¿Quieres ha
